@@ -87,3 +87,6 @@
 2022-08-11 18:52:12,211  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
 2022-08-11 18:52:12,222  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
 2022-08-11 18:52:12,299  INFO      server      Server start. Listen connect on :7777
+2022-08-11 23:18:45,812  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 23:18:45,819  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 23:18:45,845  INFO      server      Server start. Listen connect on :7777
