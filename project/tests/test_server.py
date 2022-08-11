@@ -7,7 +7,8 @@ import unittest
 sys.path.append(os.path.join(os.getcwd(), '..'))
 
 from common.variables import *
-from server import process_client_message
+from server import Server
+# from db.server_db import ServerDB
 
 
 class TestServerClass(unittest.TestCase):
@@ -15,7 +16,7 @@ class TestServerClass(unittest.TestCase):
 
     def test_is_dict(self):
         """Возвращает всегда dict"""
-        self.assertIsInstance(process_client_message({}), dict)
+        self.assertIsInstance(Server.process_client_message({}), dict)
         self.assertIsInstance(process_client_message(' '), dict)
 
     def test_required_fields(self):
@@ -27,8 +28,8 @@ class TestServerClass(unittest.TestCase):
 
     def test_account_name(self):
         """Проверка недопустимого имени пользователя"""
-        test = process_client_message({ACTION: PRESENCE, TIME: 1234,
-                                       USER:{ACCOUNT_NAME: 'Stuff'}
+        test = Server.process_client_message({ACTION: PRESENCE, TIME: 1234,
+                                       USER: {ACCOUNT_NAME: 'Stuff'}
                                        })
         self.assertEqual(test[RESPONSE], 401)
 
@@ -41,6 +42,7 @@ class TestServerClass(unittest.TestCase):
         """Проверка на неизвестный экшен"""
         test = process_client_message({ACTION: 'unknown', TIME: 4432.33})
         self.assertEqual(test[RESPONSE], 400)
+
 
 # Запустить тестирование
 if __name__ == '__main__':

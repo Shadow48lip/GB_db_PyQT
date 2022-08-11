@@ -3,6 +3,7 @@
 
 import argparse
 import time
+import threading
 from select import select
 from socket import socket, AF_INET, SOCK_STREAM, SOL_SOCKET, SO_REUSEADDR
 from common.variables import DEFAULT_PORT, MAX_CONNECTIONS, ACTION, USER, ACCOUNT_NAME, \
@@ -13,6 +14,7 @@ import logging
 import logs.server_log_config
 from common.descriptors import Port
 from common.metaclasses import ServerMaker
+from db.server_db import ServerDB
 
 LOG = logging.getLogger('app.server')
 
@@ -40,14 +42,17 @@ def arg_parser():
 
 
 # Основной класс сервера
-class Server(metaclass=ServerMaker):
+class Server(threading.Thread, metaclass=ServerMaker):
     # отправляем порт на проверку в дескриптор common.descriptors
     port = Port()
 
-    def __init__(self, listen_address, listen_port):
+    def __init__(self, listen_address, listen_port, database):
         # Параметры подключения
         self.addr = listen_address
         self.port = listen_port
+
+        # База данных сервера
+        self.database = database
 
         # Будущий объект сокета в init_socket()
         self.sock = None
@@ -60,6 +65,9 @@ class Server(metaclass=ServerMaker):
 
         # Словарь содержащий сопоставленные имена и соответствующие им сокеты.
         self.names = {}
+
+        # Конструктор предка для работы методов Тредов
+        super().__init__()
 
     def init_socket(self):
         """ Подготовка сокета """
@@ -74,7 +82,7 @@ class Server(metaclass=ServerMaker):
         self.sock = s
         self.sock.listen(MAX_CONNECTIONS)
 
-    def main_loop(self):
+    def run(self):
         # Инициализация Сокета
         self.init_socket()
 
@@ -193,6 +201,11 @@ class Server(metaclass=ServerMaker):
                 if __debug__:
                     LOG.debug(f'Зарегистрировали нового пользователя {new_user}')
                 self.names[new_user] = sock
+
+                # записываем в базу информацию о новом коннекте
+                client_ip, client_port = sock.getpeername()
+                self.database.user_login(new_user, client_ip, client_port)
+
                 send_message(sock, {RESPONSE: return_code})
                 return True
             else:
@@ -213,6 +226,7 @@ class Server(metaclass=ServerMaker):
 
         # клиент отключается
         elif message[ACTION] == EXIT and ACCOUNT_NAME in message:
+            self.database.user_logout(message[ACCOUNT_NAME])
             self.all_clients.remove(self.names[message[ACCOUNT_NAME]])
             del self.names[message[ACCOUNT_NAME]]
             LOG.info(f'Пользователь {message[ACCOUNT_NAME]} прислал команду выхода')
@@ -226,14 +240,57 @@ class Server(metaclass=ServerMaker):
         return True
 
 
+# Доступные сеансовые команды сервера
+def print_help():
+    print()
+    print('Поддерживаемые комманды:')
+    print('users - список известных пользователей')
+    print('connected - список подключённых пользователей')
+    print('loghist - история входов пользователя')
+    print('exit - завершение работы сервера.')
+    print('help - вывод справки по поддерживаемым командам')
+
+
 def main():
     # Загрузка параметров командной строки, если нет параметров,
     # то задаём значения по умолчанию.
     listen_address, listen_port = arg_parser()
 
+    # Инициализация базы данных
+    database = ServerDB()
+
     # Создание экземпляра класса - сервера.
-    server = Server(listen_address, listen_port)
-    server.main_loop()
+    server = Server(listen_address, listen_port, database)
+    server.daemon = True
+    server.start()
+
+    # поток должен успеть запустится и отчитаться о запуске
+    time.sleep(0.5)
+
+    # Печатаем справку:
+    print_help()
+
+    # Основной цикл сервера:
+    while True:
+        command = input('Введите команду: ')
+
+        if command == 'help':
+            print_help()
+        elif command == 'exit':
+            break
+        elif command == 'users':
+            for user in sorted(database.users_list()):
+                print(f'Пользователь {user[0]}, последний вход: {user[1]}')
+        elif command == 'connected':
+            for user in sorted(database.active_users_list()):
+                print(f'Пользователь {user[0]}, подключен: {user[1]}:{user[2]}, время установки соединения: {user[3]}')
+        elif command == 'loghist':
+            name = input('Введите имя пользователя для просмотра истории. '
+                         'Для вывода всей истории, просто нажмите Enter: ')
+            for user in sorted(database.login_history(name)):
+                print(f'Пользователь: {user[0]} время входа: {user[1]}. Вход с: {user[2]}:{user[3]}')
+        else:
+            print('Команда не распознана.')
 
 
 if __name__ == '__main__':

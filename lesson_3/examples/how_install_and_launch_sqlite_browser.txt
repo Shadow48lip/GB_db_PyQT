@@ -1,0 +1,7 @@
+1. How to install:
+$ sudo add-apt-repository -y ppa:linuxgndu/sqlitebrowser
+$ sudo apt-get update
+$ sudo apt-get install sqlitebrowser
+
+2. How to launch:
+$ sqlitebrowser
