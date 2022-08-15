@@ -1,0 +1,20 @@
+how to install:
+
+pip3 install --user pyqt5
+sudo apt-get install python3-pyqt5
+sudo apt-get install pyqt5-dev-tools
+sudo apt-get install qttools5-dev-tools
+
+https://stackoverflow.com/questions/36757752/how-to-install-pyqt5-in-python-3-ubuntu-14-04
+
+--------------------------------------------------------------
+
+how to open with doubleclick in PyCharm:
+
+https://stackoverflow.com/questions/27591207/pycharm-4-wont-open-qt-designer-on-double-click-of-ui-file-linux
+
+--------------------------------------------------------------
+
+transform *.ui --> *.py
+
+pyuic5 test.ui -o test.py

@@ -94,8 +94,8 @@ class ServerDB:
             # Создаем экземпляр класса self.AllUsers, через который передаем данные в таблицу
             user = self.AllUsers(username)
             self.session.add(user)
-        # Коммит здесь нужен, чтобы в db записался ID
-        self.session.commit()
+            # Коммит здесь нужен, чтобы в db записался ID
+            self.session.commit()
 
         # Теперь можно создать запись в таблицу активных пользователей о факте входа.
         # Создаем экземпляр класса self.ActiveUsers, через который передаем данные в таблицу
