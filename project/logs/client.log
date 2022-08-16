@@ -53,3 +53,237 @@
 2022-08-11 14:25:58,187  DEBUG     client      Успешный ответ от сервера с кодом 200
 2022-08-11 14:25:58,187  INFO      decorators  вызов process_ans() с параметрами ({'response': 200},) {} из функции main
 2022-08-11 14:25:58,188  DEBUG     client      Потоки запущены
+2022-08-16 18:31:39,574  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 18:31:43,245  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 18:31:43,246  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 18:31:43,249  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55177), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660663903.246922, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 18:31:43,250  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 18:31:43,250  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55177), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 18:31:43,331  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55177), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 18:31:43,332  DEBUG     client      Успешный ответ от сервера с кодом 200
+2022-08-16 18:31:43,332  INFO      decorators  вызов process_ans() с параметрами ({'response': 200},) {} из функции main
+2022-08-16 18:31:43,334  DEBUG     client      Потоки запущены
+2022-08-16 18:32:03,568  DEBUG     client      Сформирован словарь сообщения: {'action': 'msg', 'from': 'Dima', 'to': 'test_user2', 'time': 1660663923.568511, 'message': 'fffds'}
+2022-08-16 18:32:03,569  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55177), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Dima', 'to': 'test_user2', 'time': 1660663923.568511, 'message': 'fffds'}) {} из функции create_message
+2022-08-16 18:32:03,569  INFO      client      Отправлено сообщение для пользователя test_user2
+2022-08-16 18:32:03,885  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55177), raddr=('127.0.0.1', 7777)>,) {} из функции run
+2022-08-16 18:32:03,885  INFO      client      Получено сообщение от пользователя Server: Пользователь test_user2 не зарегистрирован.
+2022-08-16 18:34:01,900  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 18:34:04,657  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Stas
+2022-08-16 18:34:04,658  DEBUG     client      Создан запрос присутствия для клиента Stas
+2022-08-16 18:34:04,659  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55183), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660664044.6586602, 'user': {'account_name': 'Stas'}}) {} из функции create_presence
+2022-08-16 18:34:04,659  INFO      client      Отправлен запрос присутствия Stas
+2022-08-16 18:34:04,659  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55183), raddr=('127.0.0.1', 7777)>, 'Stas') {} из функции main
+2022-08-16 18:34:04,681  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55183), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 18:34:04,681  DEBUG     client      Успешный ответ от сервера с кодом 200
+2022-08-16 18:34:04,682  INFO      decorators  вызов process_ans() с параметрами ({'response': 200},) {} из функции main
+2022-08-16 18:34:04,683  DEBUG     client      Потоки запущены
+2022-08-16 18:34:28,659  DEBUG     client      Сформирован словарь сообщения: {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1660664068.6590111, 'message': 'ssdd'}
+2022-08-16 18:34:28,659  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55177), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1660664068.6590111, 'message': 'ssdd'}) {} из функции create_message
+2022-08-16 18:34:28,659  INFO      client      Отправлено сообщение для пользователя Stas
+2022-08-16 18:34:28,744  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55183), raddr=('127.0.0.1', 7777)>,) {} из функции run
+2022-08-16 18:34:28,744  INFO      client      Получено сообщение от пользователя Dima: ssdd
+2022-08-16 18:34:57,549  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55183), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660664097.549475, 'account_name': 'Stas'}) {} из функции create_exit_message
+2022-08-16 18:34:57,550  INFO      client      Завершение работы по команде пользователя.
+2022-08-16 18:37:15,557  CRITICAL  client      Потеряно соединение с сервером.
+2022-08-16 18:37:15,557  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55177)>, {'action': 'exit', 'time': 1660664235.55703, 'account_name': 'Dima'}) {} из функции create_exit_message
+2022-08-16 18:37:15,557  INFO      client      Завершение работы по команде пользователя.
+2022-08-16 18:37:50,384  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 18:37:52,928  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 18:37:52,929  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 18:37:52,930  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55231), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660664272.9295669, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 18:37:52,930  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 18:37:52,930  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55231), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 18:37:53,453  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55231), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 18:37:53,453  DEBUG     client      Успешный ответ от сервера с кодом 200
+2022-08-16 18:37:53,453  INFO      decorators  вызов process_ans() с параметрами ({'response': 200},) {} из функции main
+2022-08-16 18:37:53,453  DEBUG     client      Потоки запущены
+2022-08-16 18:37:58,848  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 18:38:00,445  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Stas
+2022-08-16 18:38:00,445  DEBUG     client      Создан запрос присутствия для клиента Stas
+2022-08-16 18:38:00,446  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55232), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660664280.44572, 'user': {'account_name': 'Stas'}}) {} из функции create_presence
+2022-08-16 18:38:00,446  INFO      client      Отправлен запрос присутствия Stas
+2022-08-16 18:38:00,446  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55232), raddr=('127.0.0.1', 7777)>, 'Stas') {} из функции main
+2022-08-16 18:38:00,958  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55232), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 18:38:00,959  DEBUG     client      Успешный ответ от сервера с кодом 200
+2022-08-16 18:38:00,959  INFO      decorators  вызов process_ans() с параметрами ({'response': 200},) {} из функции main
+2022-08-16 18:38:00,960  DEBUG     client      Потоки запущены
+2022-08-16 18:38:06,642  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55231), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660664286.6424, 'account_name': 'Dima'}) {} из функции create_exit_message
+2022-08-16 18:38:06,643  INFO      client      Завершение работы по команде пользователя.
+2022-08-16 18:38:21,160  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55232), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660664301.160278, 'account_name': 'Stas'}) {} из функции create_exit_message
+2022-08-16 18:38:21,160  INFO      client      Завершение работы по команде пользователя.
+2022-08-16 20:34:06,940  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:34:10,914  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:34:10,914  CRITICAL  client      Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-08-16 20:34:29,772  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:34:32,872  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:34:32,874  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 20:34:32,875  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55713), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660671272.873933, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 20:34:32,876  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 20:34:32,876  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55713), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 20:34:33,402  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55713), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:34:33,402  DEBUG     client      Успешный ответ от сервера с кодом 200
+2022-08-16 20:34:33,402  INFO      decorators  вызов process_ans() с параметрами ({'response': 200},) {} из функции main
+2022-08-16 20:34:33,435  DEBUG     client      Запрос списка известных пользователей Dima
+2022-08-16 20:34:33,435  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55713), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1660671273.4352179, 'account_name': 'Dima'}) {} из функции user_list_request
+2022-08-16 20:34:33,910  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55713), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_request
+2022-08-16 20:34:33,917  DEBUG     client      Запрос контакт листа для пользователя Dima
+2022-08-16 20:34:33,918  DEBUG     client      Сформирован запрос {'action': 'get_contacts', 'time': 1660671273.918033, 'user': 'Dima'}
+2022-08-16 20:34:33,918  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55713), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1660671273.918033, 'user': 'Dima'}) {} из функции contacts_list_request
+2022-08-16 20:34:34,419  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55713), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_request
+2022-08-16 20:34:34,419  DEBUG     client      Получен ответ {'response': 202, 'data_list': []}
+2022-08-16 20:34:34,420  DEBUG     client      Потоки запущены
+2022-08-16 20:36:30,584  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:36:36,397  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:36:36,398  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 20:36:36,398  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55719), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660671396.3980758, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 20:36:36,398  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 20:36:36,398  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55719), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 20:36:36,401  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55719), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:36:36,401  ERROR     client      Ошибочный ответ сервера: код 400 - Пользователь Dima уже зарегистрирован.
+2022-08-16 20:36:36,401  INFO      decorators  вызов process_ans() с параметрами ({'response': 400, 'error': 'Пользователь Dima уже зарегистрирован.'},) {} из функции main
+2022-08-16 20:36:36,439  DEBUG     client      Запрос списка известных пользователей Dima
+2022-08-16 20:36:36,439  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55719), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1660671396.439254, 'account_name': 'Dima'}) {} из функции user_list_request
+2022-08-16 20:38:57,434  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:39:00,071  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:39:00,072  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 20:39:00,072  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55726), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660671540.072457, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 20:39:00,072  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 20:39:00,072  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55726), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 20:39:00,074  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55726), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:39:00,074  ERROR     client      Ошибочный ответ сервера: код 400 - Пользователь Dima уже зарегистрирован.
+2022-08-16 20:39:00,074  INFO      decorators  вызов process_ans() с параметрами ({'response': 400, 'error': 'Пользователь Dima уже зарегистрирован.'},) {} из функции main
+2022-08-16 20:39:00,092  DEBUG     client      Запрос списка известных пользователей Dima
+2022-08-16 20:39:00,092  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55726), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1660671540.092309, 'account_name': 'Dima'}) {} из функции user_list_request
+2022-08-16 20:39:08,929  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55713), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660671548.9286458, 'account_name': 'Dima'}) {} из функции create_exit_message
+2022-08-16 20:39:08,929  INFO      client      Завершение работы по команде пользователя.
+2022-08-16 20:39:23,911  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:39:26,655  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:39:26,656  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 20:39:26,657  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55728), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660671566.656675, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 20:39:26,657  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 20:39:26,657  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55728), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 20:39:26,671  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55728), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:39:26,671  DEBUG     client      Успешный ответ от сервера с кодом 200
+2022-08-16 20:39:26,672  INFO      decorators  вызов process_ans() с параметрами ({'response': 200},) {} из функции main
+2022-08-16 20:39:26,687  DEBUG     client      Запрос списка известных пользователей Dima
+2022-08-16 20:39:26,687  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55728), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1660671566.687891, 'account_name': 'Dima'}) {} из функции user_list_request
+2022-08-16 20:39:27,173  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55728), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_request
+2022-08-16 20:39:27,178  DEBUG     client      Запрос контакт листа для пользователя Dima
+2022-08-16 20:39:27,178  DEBUG     client      Сформирован запрос {'action': 'get_contacts', 'time': 1660671567.178375, 'user': 'Dima'}
+2022-08-16 20:39:27,178  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55728), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1660671567.178375, 'user': 'Dima'}) {} из функции contacts_list_request
+2022-08-16 20:39:27,684  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55728), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_request
+2022-08-16 20:39:27,684  DEBUG     client      Получен ответ {'response': 202, 'data_list': []}
+2022-08-16 20:39:27,685  DEBUG     client      Потоки запущены
+2022-08-16 20:39:31,851  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:39:34,535  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:39:34,536  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 20:39:34,536  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55729), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660671574.535946, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 20:39:34,536  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 20:39:34,536  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55729), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 20:39:35,039  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55729), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:39:35,039  ERROR     client      Ошибочный ответ сервера: код 400 - Пользователь Dima уже зарегистрирован.
+2022-08-16 20:39:35,039  INFO      decorators  вызов process_ans() с параметрами ({'response': 400, 'error': 'Пользователь Dima уже зарегистрирован.'},) {} из функции main
+2022-08-16 20:39:35,067  DEBUG     client      Запрос списка известных пользователей Dima
+2022-08-16 20:39:35,068  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55729), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1660671575.06783, 'account_name': 'Dima'}) {} из функции user_list_request
+2022-08-16 20:39:35,542  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55729), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_request
+2022-08-16 20:51:24,963  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:51:27,702  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:51:27,703  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 20:51:27,704  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55753), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660672287.703574, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 20:51:27,704  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 20:51:27,704  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55753), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 20:51:27,707  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55753), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:51:31,022  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:51:32,860  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:51:32,861  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 20:51:32,861  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55754), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660672292.861134, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 20:51:32,861  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 20:51:32,861  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55754), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 20:51:32,863  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55754), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:52:46,121  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:52:48,191  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:52:48,191  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 20:52:48,192  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55762), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660672368.1918452, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 20:52:48,192  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 20:52:48,192  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55762), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 20:52:48,194  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55762), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:53:23,384  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:53:25,977  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:53:25,977  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 20:53:25,978  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55767), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660672405.9778938, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 20:53:25,978  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 20:53:25,978  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55767), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 20:53:25,980  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55767), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:53:25,980  ERROR     client      400 : Пользователь Dima уже зарегистрирован.
+2022-08-16 20:53:48,964  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:53:50,622  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Stas
+2022-08-16 20:53:50,624  DEBUG     client      Создан запрос присутствия для клиента Stas
+2022-08-16 20:53:50,624  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55768), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660672430.623984, 'user': {'account_name': 'Stas'}}) {} из функции create_presence
+2022-08-16 20:53:50,624  INFO      client      Отправлен запрос присутствия Stas
+2022-08-16 20:53:50,624  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55768), raddr=('127.0.0.1', 7777)>, 'Stas') {} из функции main
+2022-08-16 20:53:50,640  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55768), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:53:50,640  DEBUG     client      Успешный ответ от сервера с кодом 200
+2022-08-16 20:53:50,641  INFO      decorators  вызов process_ans() с параметрами ({'response': 200},) {} из функции main
+2022-08-16 20:53:50,680  DEBUG     client      Запрос списка известных пользователей Stas
+2022-08-16 20:53:50,681  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55768), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1660672430.68096, 'account_name': 'Stas'}) {} из функции user_list_request
+2022-08-16 20:53:51,146  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55768), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_request
+2022-08-16 20:53:51,152  DEBUG     client      Запрос контакт листа для пользователя Stas
+2022-08-16 20:53:51,152  DEBUG     client      Сформирован запрос {'action': 'get_contacts', 'time': 1660672431.152766, 'user': 'Stas'}
+2022-08-16 20:53:51,152  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55768), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1660672431.152766, 'user': 'Stas'}) {} из функции contacts_list_request
+2022-08-16 20:53:51,686  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55768), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_request
+2022-08-16 20:53:51,687  DEBUG     client      Получен ответ {'response': 202, 'data_list': []}
+2022-08-16 20:53:51,687  DEBUG     client      Потоки запущены
+2022-08-16 20:55:33,881  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55768), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660672533.881574, 'account_name': 'Stas'}) {} из функции create_exit_message
+2022-08-16 20:55:33,882  INFO      client      Завершение работы по команде пользователя.
+2022-08-16 20:55:37,186  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:55:52,098  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55728), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660672552.098491, 'account_name': 'Dima'}) {} из функции create_exit_message
+2022-08-16 20:55:52,099  INFO      client      Завершение работы по команде пользователя.
+2022-08-16 20:55:54,675  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-16 20:55:56,809  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Dima
+2022-08-16 20:55:56,809  DEBUG     client      Создан запрос присутствия для клиента Dima
+2022-08-16 20:55:56,810  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660672556.809932, 'user': {'account_name': 'Dima'}}) {} из функции create_presence
+2022-08-16 20:55:56,810  INFO      client      Отправлен запрос присутствия Dima
+2022-08-16 20:55:56,810  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>, 'Dima') {} из функции main
+2022-08-16 20:55:57,321  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:55:57,321  DEBUG     client      Успешный ответ от сервера с кодом 200
+2022-08-16 20:55:57,321  INFO      decorators  вызов process_ans() с параметрами ({'response': 200},) {} из функции main
+2022-08-16 20:55:57,344  DEBUG     client      Запрос списка известных пользователей Dima
+2022-08-16 20:55:57,344  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1660672557.3446012, 'account_name': 'Dima'}) {} из функции user_list_request
+2022-08-16 20:55:57,826  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_request
+2022-08-16 20:55:57,835  DEBUG     client      Запрос контакт листа для пользователя Dima
+2022-08-16 20:55:57,835  DEBUG     client      Сформирован запрос {'action': 'get_contacts', 'time': 1660672557.835814, 'user': 'Dima'}
+2022-08-16 20:55:57,836  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1660672557.835814, 'user': 'Dima'}) {} из функции contacts_list_request
+2022-08-16 20:55:58,334  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_request
+2022-08-16 20:55:58,334  DEBUG     client      Получен ответ {'response': 202, 'data_list': []}
+2022-08-16 20:55:58,334  DEBUG     client      Потоки запущены
+2022-08-16 20:57:42,525  DEBUG     client      Создание контакта Stas
+2022-08-16 20:57:42,526  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>, {'action': 'add', 'time': 1660672662.525725, 'user': 'Dima', 'account_name': 'Stas'}) {} из функции add_contact
+2022-08-16 20:57:42,561  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>,) {} из функции add_contact
+2022-08-16 20:58:11,672  INFO      client      Клиент чата запущен со следующими параметрами: 127.0.0.1:7777, Пользователь: Stas
+2022-08-16 20:58:11,672  DEBUG     client      Создан запрос присутствия для клиента Stas
+2022-08-16 20:58:11,673  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55785), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660672691.6728818, 'user': {'account_name': 'Stas'}}) {} из функции create_presence
+2022-08-16 20:58:11,673  INFO      client      Отправлен запрос присутствия Stas
+2022-08-16 20:58:11,673  INFO      decorators  вызов create_presence() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55785), raddr=('127.0.0.1', 7777)>, 'Stas') {} из функции main
+2022-08-16 20:58:11,688  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55785), raddr=('127.0.0.1', 7777)>,) {} из функции main
+2022-08-16 20:58:11,688  DEBUG     client      Успешный ответ от сервера с кодом 200
+2022-08-16 20:58:11,688  INFO      decorators  вызов process_ans() с параметрами ({'response': 200},) {} из функции main
+2022-08-16 20:58:11,717  DEBUG     client      Запрос списка известных пользователей Stas
+2022-08-16 20:58:11,717  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55785), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1660672691.717317, 'account_name': 'Stas'}) {} из функции user_list_request
+2022-08-16 20:58:12,190  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55785), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_request
+2022-08-16 20:58:12,195  DEBUG     client      Запрос контакт листа для пользователя Stas
+2022-08-16 20:58:12,195  DEBUG     client      Сформирован запрос {'action': 'get_contacts', 'time': 1660672692.1958, 'user': 'Stas'}
+2022-08-16 20:58:12,195  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55785), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1660672692.1958, 'user': 'Stas'}) {} из функции contacts_list_request
+2022-08-16 20:58:12,697  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55785), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_request
+2022-08-16 20:58:12,697  DEBUG     client      Получен ответ {'response': 202, 'data_list': []}
+2022-08-16 20:58:12,697  DEBUG     client      Потоки запущены
+2022-08-16 20:58:29,574  ERROR     client      Попытка отправить сообщение незарегистрированому получателю: Hi
+2022-08-16 20:58:41,757  DEBUG     client      Сформирован словарь сообщения: {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1660672721.757903, 'message': 'Hi'}
+2022-08-16 20:58:42,652  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1660672721.757903, 'message': 'Hi'}) {} из функции create_message
+2022-08-16 20:58:42,652  INFO      client      Отправлено сообщение для пользователя Stas
+2022-08-16 20:58:43,761  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55785), raddr=('127.0.0.1', 7777)>,) {} из функции run
+2022-08-16 20:58:43,772  INFO      client      Получено сообщение от пользователя Dima: Hi
+2022-08-16 20:59:13,832  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55785), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660672753.832285, 'account_name': 'Stas'}) {} из функции create_exit_message
+2022-08-16 20:59:13,834  INFO      client      Завершение работы по команде пользователя.
+2022-08-16 20:59:18,707  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55776), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660672758.7077131, 'account_name': 'Dima'}) {} из функции create_exit_message
+2022-08-16 20:59:18,708  INFO      client      Завершение работы по команде пользователя.
