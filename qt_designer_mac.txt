@@ -1,0 +1,8 @@
+Вырезанная программа
+https://build-system.fman.io/qt-designer-download
+
+Установка через Homebrew
+brew install Qt5
+open -a Designer
+
+https://stackoverflow.com/questions/46542326/installing-pyqt5-incl-qt-designer-on-macos-sierra
