@@ -56,7 +56,7 @@ class Finder:
 
 
 if __name__ == '__main__':
-    urls = ['http://www.python.org/', 'https://habrahabr.ru/search/?q=%5Bpython%5D', 'https://python-scripts.com/']
+    urls = ['http://www.python.org/', 'http://habrahabr.ru/search/?q=%5Bpython%5D', 'http://python-scripts.com/']
     res_queue = Queue()
     finder = Finder('python', res_queue=res_queue)
     finder.search_in_urls(urls)

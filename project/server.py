@@ -177,7 +177,7 @@ class Server(threading.Thread, metaclass=ServerMaker):
             }
             send_message(self.names[message[SENDER]], message_dict)
             LOG.error(
-                f'Пользователь {message[DESTINATION]} не зарегистрирован на сервере, отправка сообщения невозможна.')
+                f'Пользователь {message[DESTINATION]} не зарегистрирован online на сервере, отправка сообщения невозможна.')
             return
 
         if self.names[message[DESTINATION]] not in listen_socks:

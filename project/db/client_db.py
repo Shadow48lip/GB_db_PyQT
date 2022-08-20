@@ -8,6 +8,7 @@ import datetime
 
 LOG = logging.getLogger('app.client')
 
+
 # БД клиентского модуля
 class ClientDB:
     Base = declarative_base()
@@ -61,7 +62,6 @@ class ClientDB:
         self.session.query(self.Contacts).delete()
         self.session.commit()
 
-
     # Функция добавления контактов
     def add_contact(self, contact):
         if not self.session.query(self.Contacts).filter_by(name=contact).count():
@@ -88,7 +88,7 @@ class ClientDB:
         message_row = self.MessageHistory(from_user, to_user, message)
         self.session.add(message_row)
         self.session.commit()
-        
+
     # Функция возвращает контакты
     def get_contacts(self):
         return [contact[0] for contact in self.session.query(self.Contacts.name).all()]
