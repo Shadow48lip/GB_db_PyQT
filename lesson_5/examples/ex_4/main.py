@@ -20,6 +20,7 @@ class SliderClass(QDialog):
         # при передвигании слайдер будет срабатывать ф-ция on_changed_value
         self.sd.horizontalSlider.valueChanged.connect(self.on_changed_value)
 
+
     def on_changed_value(self, value):
         # В этой ф-ции on_changed_value мы генерируем сигнал
         self.changed_value.emit(value)
@@ -47,8 +48,8 @@ if __name__ == '__main__':
     PROGRESS = ProgressClass()
     # Непосредственное связывание ProgressBar'а и Sliser'а
     PROGRESS.make_connection(SLIDER)
-    # отображаем слайдер
-    SLIDER.show()
     # отображаем прогресс-бар
     PROGRESS.show()
+    # отображаем слайдер
+    SLIDER.show()
     sys.exit(APP.exec_())

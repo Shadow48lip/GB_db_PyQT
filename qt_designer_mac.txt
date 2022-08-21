@@ -6,3 +6,6 @@ brew install Qt5
 open -a Designer
 
 https://stackoverflow.com/questions/46542326/installing-pyqt5-incl-qt-designer-on-macos-sierra
+
+
+pyuic5 test.ui -o test.py
