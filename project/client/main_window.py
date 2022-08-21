@@ -158,7 +158,7 @@ class ClientMainWindow(QMainWindow):
             if err.errno:
                 self.messages.critical(self, 'Ошибка', 'Потеряно соединение с сервером!')
                 self.close()
-            self.messages.critical(self, 'Ошибка', 'Таймаут соединения! 1')
+            self.messages.critical(self, 'Ошибка', 'Таймаут соединения!')
         else:
             self.database.add_contact(new_contact)
             new_contact = QStandardItem(new_contact)
@@ -185,7 +185,7 @@ class ClientMainWindow(QMainWindow):
             if err.errno:
                 self.messages.critical(self, 'Ошибка', 'Потеряно соединение с сервером!')
                 self.close()
-            self.messages.critical(self, 'Ошибка', 'Таймаут соединения! 2')
+            self.messages.critical(self, 'Ошибка', 'Таймаут соединения!')
         else:
             self.database.del_contact(selected)
             self.clients_list_update()
@@ -212,7 +212,8 @@ class ClientMainWindow(QMainWindow):
             if err.errno:
                 self.messages.critical(self, 'Ошибка', 'Потеряно соединение с сервером!')
                 self.close()
-            self.messages.critical(self, 'Ошибка', 'Таймаут соединения! 3')
+            self.messages.critical(self, 'Ошибка', 'Таймаут соединения!')
+            print(err)
         except (ConnectionResetError, ConnectionAbortedError):
             self.messages.critical(self, 'Ошибка', 'Потеряно соединение с сервером!')
             self.close()

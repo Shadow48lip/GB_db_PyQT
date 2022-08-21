@@ -111,8 +111,10 @@ class ClientTransport(threading.Thread, QObject):
         # Если это подтверждение чего-либо
         if RESPONSE in message:
             if message[RESPONSE] == 200:
+                LOG.debug('Сообщение принято сервером. Код 200')
                 return
             elif message[RESPONSE] == 400:
+                LOG.error('Сообщение принято сервером с ошибкой. Код 400')
                 raise ServerError(f'{message[ERROR]}')
             else:
                 LOG.debug(f'Принят неизвестный код подтверждения {message[RESPONSE]}')
@@ -124,14 +126,14 @@ class ClientTransport(threading.Thread, QObject):
                 and DESTINATION in message \
                 and MESSAGE_TEXT in message \
                 and message[DESTINATION] == self.username:
-            LOG.debug(f'Получено сообщение от пользователя {message[SENDER]}:'
+            LOG.debug(f'Получено сообщение от пользователя {message[SENDER]}: '
                          f'{message[MESSAGE_TEXT]}')
             self.database.save_message(message[SENDER], 'in', message[MESSAGE_TEXT])
             self.new_message.emit(message[SENDER])
 
     # Функция, обновляющая контакт - лист с сервера
     def contacts_list_update(self):
-        LOG.debug(f'Запрос контакт листа для пользователя {self.name}')
+        LOG.debug(f'Запрос контакт листа для пользователя {self.username}')
         req = {
             ACTION: GET_CONTACTS,
             TIME: time.time(),
@@ -212,7 +214,7 @@ class ClientTransport(threading.Thread, QObject):
             ACTION: MESSAGE,
             SENDER: self.username,
             DESTINATION: to,
-            TIME: time.time(),ё
+            TIME: time.time(),
             MESSAGE_TEXT: message
         }
         LOG.debug(f'Сформирован словарь сообщения: {message_dict}')

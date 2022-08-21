@@ -240,6 +240,7 @@ class Server(threading.Thread, metaclass=ServerMaker):
                 and self.names[message[SENDER]] == sock:
             self.messages.append(message)
             self.database.process_message(message[SENDER], message[DESTINATION])
+            send_message(sock, {RESPONSE: return_code})
             return True
 
         # клиент отключается

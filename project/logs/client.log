@@ -677,3 +677,231 @@
 2022-08-20 12:12:27,934  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56166), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660986747.933949, 'account_name': 'Yura'}) {} из функции transport_shutdown
 2022-08-20 12:12:27,934  DEBUG     transport   Транспорт завершает работу.
 2022-08-20 12:12:28,422  DEBUG     transport   Потеряно соединение с сервером.
+2022-08-20 12:31:09,224  INFO      decorators  вызов arg_parser() с параметрами () {} из функции <module>
+2022-08-20 12:31:12,467  INFO      client      Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Dima
+2022-08-20 12:31:12,485  INFO      transport   Попытка подключения №1
+2022-08-20 12:31:12,486  DEBUG     transport   Установлено соединение с сервером
+2022-08-20 12:31:12,486  DEBUG     transport   Сформировано presence сообщение для пользователя Dima
+2022-08-20 12:31:12,486  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56356), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660987872.486094, 'user': {'account_name': 'Dima'}}) {} из функции connection_init
+2022-08-20 12:31:12,530  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56356), raddr=('127.0.0.1', 7777)>,) {} из функции connection_init
+2022-08-20 12:31:12,530  DEBUG     transport   Разбор сообщения от сервера: {'response': 200}
+2022-08-20 12:31:12,530  INFO      transport   Соединение с сервером успешно установлено.
+2022-08-20 12:31:12,530  DEBUG     transport   Запрос списка известных пользователей Dima
+2022-08-20 12:31:12,531  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56356), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1660987872.531021, 'account_name': 'Dima'}) {} из функции user_list_update
+2022-08-20 12:31:13,038  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56356), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_update
+2022-08-20 12:31:13,050  DEBUG     transport   Запрос контакт листа для пользователя Thread-1
+2022-08-20 12:31:13,050  DEBUG     transport   Сформирован запрос {'action': 'get_contacts', 'time': 1660987873.050955, 'user': 'Dima'}
+2022-08-20 12:31:13,051  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56356), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1660987873.050955, 'user': 'Dima'}) {} из функции contacts_list_update
+2022-08-20 12:31:13,554  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56356), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_update
+2022-08-20 12:31:13,554  DEBUG     transport   Получен ответ {'response': 202, 'data_list': ['Stas']}
+2022-08-20 12:31:13,570  DEBUG     transport   Запущен процесс - приёмник сообщений с сервера.
+2022-08-20 12:31:26,283  INFO      decorators  вызов arg_parser() с параметрами () {} из функции <module>
+2022-08-20 12:31:29,521  INFO      client      Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Stas
+2022-08-20 12:31:29,548  INFO      transport   Попытка подключения №1
+2022-08-20 12:31:29,549  DEBUG     transport   Установлено соединение с сервером
+2022-08-20 12:31:29,549  DEBUG     transport   Сформировано presence сообщение для пользователя Stas
+2022-08-20 12:31:29,549  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56357), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1660987889.5492449, 'user': {'account_name': 'Stas'}}) {} из функции connection_init
+2022-08-20 12:31:29,561  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56357), raddr=('127.0.0.1', 7777)>,) {} из функции connection_init
+2022-08-20 12:31:29,561  DEBUG     transport   Разбор сообщения от сервера: {'response': 200}
+2022-08-20 12:31:29,561  INFO      transport   Соединение с сервером успешно установлено.
+2022-08-20 12:31:29,561  DEBUG     transport   Запрос списка известных пользователей Stas
+2022-08-20 12:31:29,561  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56357), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1660987889.5618691, 'account_name': 'Stas'}) {} из функции user_list_update
+2022-08-20 12:31:30,067  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56357), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_update
+2022-08-20 12:31:30,076  DEBUG     transport   Запрос контакт листа для пользователя Thread-1
+2022-08-20 12:31:30,077  DEBUG     transport   Сформирован запрос {'action': 'get_contacts', 'time': 1660987890.0769842, 'user': 'Stas'}
+2022-08-20 12:31:30,077  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56357), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1660987890.0769842, 'user': 'Stas'}) {} из функции contacts_list_update
+2022-08-20 12:31:30,574  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56357), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_update
+2022-08-20 12:31:30,574  DEBUG     transport   Получен ответ {'response': 202, 'data_list': ['Dima', 'Yura']}
+2022-08-20 12:31:30,594  DEBUG     transport   Запущен процесс - приёмник сообщений с сервера.
+2022-08-20 12:31:42,640  DEBUG     transport   Сформирован словарь сообщения: {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1660987902.640048, 'message': 'sss'}
+2022-08-20 12:31:42,640  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56356), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1660987902.640048, 'message': 'sss'}) {} из функции send_message
+2022-08-20 12:31:43,626  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56357), raddr=('127.0.0.1', 7777)>,) {} из функции run
+2022-08-20 12:31:43,627  DEBUG     transport   Принято сообщение с сервера: {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1660987902.640048, 'message': 'sss'}
+2022-08-20 12:31:43,627  DEBUG     transport   Разбор сообщения от сервера: {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1660987902.640048, 'message': 'sss'}
+2022-08-20 12:31:43,627  DEBUG     transport   Получено сообщение от пользователя Dima:sss
+2022-08-20 12:32:26,064  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56357), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660987946.064063, 'account_name': 'Stas'}) {} из функции transport_shutdown
+2022-08-20 12:32:26,064  DEBUG     transport   Транспорт завершает работу.
+2022-08-20 12:32:26,745  DEBUG     transport   Потеряно соединение с сервером.
+2022-08-20 12:32:29,479  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56356), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1660987949.478915, 'account_name': 'Dima'}) {} из функции transport_shutdown
+2022-08-20 12:32:29,479  DEBUG     transport   Транспорт завершает работу.
+2022-08-20 12:32:29,750  DEBUG     transport   Потеряно соединение с сервером.
+2022-08-21 10:10:11,280  INFO      decorators  вызов arg_parser() с параметрами () {} из функции <module>
+2022-08-21 10:13:05,773  INFO      decorators  вызов arg_parser() с параметрами () {} из функции <module>
+2022-08-21 10:13:32,568  INFO      decorators  вызов arg_parser() с параметрами () {} из функции <module>
+2022-08-21 10:13:44,404  INFO      client      Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Dima
+2022-08-21 10:13:44,430  INFO      transport   Попытка подключения №1
+2022-08-21 10:13:44,430  DEBUG     transport   Установлено соединение с сервером
+2022-08-21 10:13:44,431  DEBUG     transport   Сформировано presence сообщение для пользователя Dima
+2022-08-21 10:13:44,431  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50099), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1661066024.4311092, 'user': {'account_name': 'Dima'}}) {} из функции connection_init
+2022-08-21 10:13:44,951  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50099), raddr=('127.0.0.1', 7777)>,) {} из функции connection_init
+2022-08-21 10:13:44,951  DEBUG     transport   Разбор сообщения от сервера: {'response': 200}
+2022-08-21 10:13:44,951  DEBUG     transport   Сообщение принято сервером. Код 200
+2022-08-21 10:13:44,951  INFO      transport   Соединение с сервером успешно установлено.
+2022-08-21 10:13:44,951  DEBUG     transport   Запрос списка известных пользователей Dima
+2022-08-21 10:13:44,951  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50099), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1661066024.951774, 'account_name': 'Dima'}) {} из функции user_list_update
+2022-08-21 10:13:45,457  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50099), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_update
+2022-08-21 10:13:45,465  DEBUG     transport   Запрос контакт листа для пользователя Thread-1
+2022-08-21 10:13:45,466  DEBUG     transport   Сформирован запрос {'action': 'get_contacts', 'time': 1661066025.466304, 'user': 'Dima'}
+2022-08-21 10:13:45,466  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50099), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1661066025.466304, 'user': 'Dima'}) {} из функции contacts_list_update
+2022-08-21 10:13:45,968  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50099), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_update
+2022-08-21 10:13:45,968  DEBUG     transport   Получен ответ {'response': 202, 'data_list': ['Stas']}
+2022-08-21 10:13:45,980  DEBUG     transport   Запущен процесс - приёмник сообщений с сервера.
+2022-08-21 10:14:02,071  INFO      decorators  вызов arg_parser() с параметрами () {} из функции <module>
+2022-08-21 10:14:05,660  INFO      client      Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Stas
+2022-08-21 10:14:05,687  INFO      transport   Попытка подключения №1
+2022-08-21 10:14:05,688  DEBUG     transport   Установлено соединение с сервером
+2022-08-21 10:14:05,688  DEBUG     transport   Сформировано presence сообщение для пользователя Stas
+2022-08-21 10:14:05,688  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50101), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1661066045.6883578, 'user': {'account_name': 'Stas'}}) {} из функции connection_init
+2022-08-21 10:14:05,693  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50101), raddr=('127.0.0.1', 7777)>,) {} из функции connection_init
+2022-08-21 10:14:05,693  DEBUG     transport   Разбор сообщения от сервера: {'response': 200}
+2022-08-21 10:14:05,693  DEBUG     transport   Сообщение принято сервером. Код 200
+2022-08-21 10:14:05,693  INFO      transport   Соединение с сервером успешно установлено.
+2022-08-21 10:14:05,693  DEBUG     transport   Запрос списка известных пользователей Stas
+2022-08-21 10:14:05,694  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50101), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1661066045.693919, 'account_name': 'Stas'}) {} из функции user_list_update
+2022-08-21 10:14:06,198  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50101), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_update
+2022-08-21 10:14:06,210  DEBUG     transport   Запрос контакт листа для пользователя Thread-1
+2022-08-21 10:14:06,210  DEBUG     transport   Сформирован запрос {'action': 'get_contacts', 'time': 1661066046.210758, 'user': 'Stas'}
+2022-08-21 10:14:06,211  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50101), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1661066046.210758, 'user': 'Stas'}) {} из функции contacts_list_update
+2022-08-21 10:14:06,704  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50101), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_update
+2022-08-21 10:14:06,704  DEBUG     transport   Получен ответ {'response': 202, 'data_list': ['Dima', 'Yura']}
+2022-08-21 10:14:06,722  DEBUG     transport   Запущен процесс - приёмник сообщений с сервера.
+2022-08-21 10:14:25,097  DEBUG     transport   Сформирован словарь сообщения: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661066065.097281, 'message': 'Yes'}
+2022-08-21 10:14:25,097  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50101), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661066065.097281, 'message': 'Yes'}) {} из функции send_message
+2022-08-21 10:14:26,102  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50099), raddr=('127.0.0.1', 7777)>,) {} из функции run
+2022-08-21 10:14:26,103  DEBUG     transport   Принято сообщение с сервера: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661066065.097281, 'message': 'Yes'}
+2022-08-21 10:14:26,103  DEBUG     transport   Разбор сообщения от сервера: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661066065.097281, 'message': 'Yes'}
+2022-08-21 10:14:26,103  DEBUG     transport   Получено сообщение от пользователя Stas:Yes
+2022-08-21 10:14:39,557  DEBUG     transport   Сформирован словарь сообщения: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661066079.55733, 'message': 'Yes 2'}
+2022-08-21 10:14:39,626  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50101), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661066079.55733, 'message': 'Yes 2'}) {} из функции send_message
+2022-08-21 10:14:40,653  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50099), raddr=('127.0.0.1', 7777)>,) {} из функции run
+2022-08-21 10:14:40,653  DEBUG     transport   Принято сообщение с сервера: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661066079.55733, 'message': 'Yes 2'}
+2022-08-21 10:14:40,654  DEBUG     transport   Разбор сообщения от сервера: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661066079.55733, 'message': 'Yes 2'}
+2022-08-21 10:14:40,654  DEBUG     transport   Получено сообщение от пользователя Stas:Yes 2
+2022-08-21 10:20:07,882  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50099), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1661066407.8820941, 'account_name': 'Dima'}) {} из функции transport_shutdown
+2022-08-21 10:20:07,882  DEBUG     transport   Транспорт завершает работу.
+2022-08-21 10:20:08,244  DEBUG     transport   Потеряно соединение с сервером.
+2022-08-21 10:20:10,835  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 50101), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1661066410.835052, 'account_name': 'Stas'}) {} из функции transport_shutdown
+2022-08-21 10:20:10,835  DEBUG     transport   Транспорт завершает работу.
+2022-08-21 10:20:11,255  DEBUG     transport   Потеряно соединение с сервером.
+2022-08-21 10:41:04,456  INFO      decorators  вызов arg_parser() с параметрами () {} из функции <module>
+2022-08-21 10:41:08,379  INFO      client      Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Dima
+2022-08-21 10:41:08,402  INFO      transport   Попытка подключения №1
+2022-08-21 10:41:08,403  DEBUG     transport   Установлено соединение с сервером
+2022-08-21 10:41:08,404  DEBUG     transport   Сформировано presence сообщение для пользователя Dima
+2022-08-21 10:41:08,404  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51080), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1661067668.4041102, 'user': {'account_name': 'Dima'}}) {} из функции connection_init
+2022-08-21 10:41:08,926  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51080), raddr=('127.0.0.1', 7777)>,) {} из функции connection_init
+2022-08-21 10:41:08,926  DEBUG     transport   Разбор сообщения от сервера: {'response': 200}
+2022-08-21 10:41:08,926  DEBUG     transport   Сообщение принято сервером. Код 200
+2022-08-21 10:41:08,926  INFO      transport   Соединение с сервером успешно установлено.
+2022-08-21 10:41:08,926  DEBUG     transport   Запрос списка известных пользователей Dima
+2022-08-21 10:41:08,926  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51080), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1661067668.926483, 'account_name': 'Dima'}) {} из функции user_list_update
+2022-08-21 10:41:09,431  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51080), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_update
+2022-08-21 10:41:09,440  DEBUG     transport   Запрос контакт листа для пользователя Dima
+2022-08-21 10:41:09,440  DEBUG     transport   Сформирован запрос {'action': 'get_contacts', 'time': 1661067669.440516, 'user': 'Dima'}
+2022-08-21 10:41:09,440  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51080), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1661067669.440516, 'user': 'Dima'}) {} из функции contacts_list_update
+2022-08-21 10:41:09,939  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51080), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_update
+2022-08-21 10:41:09,939  DEBUG     transport   Получен ответ {'response': 202, 'data_list': ['Stas']}
+2022-08-21 10:41:09,949  DEBUG     transport   Запущен процесс - приёмник сообщений с сервера.
+2022-08-21 10:49:45,557  INFO      decorators  вызов arg_parser() с параметрами () {} из функции <module>
+2022-08-21 10:49:48,728  INFO      client      Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Stas
+2022-08-21 10:49:48,754  INFO      transport   Попытка подключения №1
+2022-08-21 10:49:48,754  DEBUG     transport   Установлено соединение с сервером
+2022-08-21 10:49:48,754  DEBUG     transport   Сформировано presence сообщение для пользователя Stas
+2022-08-21 10:49:48,754  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1661068188.7547698, 'user': {'account_name': 'Stas'}}) {} из функции connection_init
+2022-08-21 10:49:49,268  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>,) {} из функции connection_init
+2022-08-21 10:49:49,268  DEBUG     transport   Разбор сообщения от сервера: {'response': 200}
+2022-08-21 10:49:49,268  DEBUG     transport   Сообщение принято сервером. Код 200
+2022-08-21 10:49:49,268  INFO      transport   Соединение с сервером успешно установлено.
+2022-08-21 10:49:49,268  DEBUG     transport   Запрос списка известных пользователей Stas
+2022-08-21 10:49:49,268  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1661068189.268679, 'account_name': 'Stas'}) {} из функции user_list_update
+2022-08-21 10:49:49,773  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_update
+2022-08-21 10:49:49,782  DEBUG     transport   Запрос контакт листа для пользователя Stas
+2022-08-21 10:49:49,782  DEBUG     transport   Сформирован запрос {'action': 'get_contacts', 'time': 1661068189.7828548, 'user': 'Stas'}
+2022-08-21 10:49:49,783  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1661068189.7828548, 'user': 'Stas'}) {} из функции contacts_list_update
+2022-08-21 10:49:50,279  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_update
+2022-08-21 10:49:50,279  DEBUG     transport   Получен ответ {'response': 202, 'data_list': ['Dima', 'Yura']}
+2022-08-21 10:49:50,297  DEBUG     transport   Запущен процесс - приёмник сообщений с сервера.
+2022-08-21 10:50:03,715  DEBUG     transport   Сформирован словарь сообщения: {'action': 'msg', 'from': 'Stas', 'to': 'Yura', 'time': 1661068203.715795, 'message': 'ss'}
+2022-08-21 10:50:03,839  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Stas', 'to': 'Yura', 'time': 1661068203.715795, 'message': 'ss'}) {} из функции send_message
+2022-08-21 10:50:04,338  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>,) {} из функции send_message
+2022-08-21 10:50:04,338  DEBUG     transport   Разбор сообщения от сервера: {'action': 'msg', 'from': 'Server', 'to': 'Stas', 'time': 1661068204.337777, 'message': 'Пользователь Yura не зарегистрирован.'}
+2022-08-21 10:50:04,338  DEBUG     transport   Получено сообщение от пользователя Server:Пользователь Yura не зарегистрирован.
+2022-08-21 10:50:06,524  INFO      transport   Отправлено сообщение для пользователя Yura
+2022-08-21 10:52:16,555  DEBUG     transport   Сформирован словарь сообщения: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661068336.5552819, 'message': 'www'}
+2022-08-21 10:52:16,555  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661068336.5552819, 'message': 'www'}) {} из функции send_message
+2022-08-21 10:52:16,715  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51080), raddr=('127.0.0.1', 7777)>,) {} из функции run
+2022-08-21 10:52:16,716  DEBUG     transport   Принято сообщение с сервера: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661068336.5552819, 'message': 'www'}
+2022-08-21 10:52:16,716  DEBUG     transport   Разбор сообщения от сервера: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661068336.5552819, 'message': 'www'}
+2022-08-21 10:52:16,716  DEBUG     transport   Получено сообщение от пользователя Stas:www
+2022-08-21 10:59:35,065  DEBUG     transport   Сформирован словарь сообщения: {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1661068775.065848, 'message': '2223'}
+2022-08-21 10:59:35,066  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51080), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1661068775.065848, 'message': '2223'}) {} из функции send_message
+2022-08-21 10:59:36,011  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>,) {} из функции run
+2022-08-21 10:59:36,011  DEBUG     transport   Принято сообщение с сервера: {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1661068775.065848, 'message': '2223'}
+2022-08-21 10:59:36,011  DEBUG     transport   Разбор сообщения от сервера: {'action': 'msg', 'from': 'Dima', 'to': 'Stas', 'time': 1661068775.065848, 'message': '2223'}
+2022-08-21 10:59:36,011  DEBUG     transport   Получено сообщение от пользователя Dima:2223
+2022-08-21 11:03:59,212  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51080), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1661069039.003231, 'account_name': 'Dima'}) {} из функции transport_shutdown
+2022-08-21 11:03:59,212  DEBUG     transport   Транспорт завершает работу.
+2022-08-21 11:04:00,713  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51095), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1661069040.5248818, 'account_name': 'Stas'}) {} из функции transport_shutdown
+2022-08-21 11:04:00,714  DEBUG     transport   Транспорт завершает работу.
+2022-08-21 11:04:11,873  INFO      decorators  вызов arg_parser() с параметрами () {} из функции <module>
+2022-08-21 11:04:16,183  INFO      client      Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Dima
+2022-08-21 11:04:16,207  INFO      transport   Попытка подключения №1
+2022-08-21 11:04:16,208  DEBUG     transport   Установлено соединение с сервером
+2022-08-21 11:04:16,208  DEBUG     transport   Сформировано presence сообщение для пользователя Dima
+2022-08-21 11:04:16,208  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51105), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1661069056.208415, 'user': {'account_name': 'Dima'}}) {} из функции connection_init
+2022-08-21 11:04:16,220  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51105), raddr=('127.0.0.1', 7777)>,) {} из функции connection_init
+2022-08-21 11:04:16,220  DEBUG     transport   Разбор сообщения от сервера: {'response': 200}
+2022-08-21 11:04:16,220  DEBUG     transport   Сообщение принято сервером. Код 200
+2022-08-21 11:04:16,220  INFO      transport   Соединение с сервером успешно установлено.
+2022-08-21 11:04:16,220  DEBUG     transport   Запрос списка известных пользователей Dima
+2022-08-21 11:04:16,220  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51105), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1661069056.220702, 'account_name': 'Dima'}) {} из функции user_list_update
+2022-08-21 11:04:16,726  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51105), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_update
+2022-08-21 11:04:16,735  DEBUG     transport   Запрос контакт листа для пользователя Dima
+2022-08-21 11:04:16,736  DEBUG     transport   Сформирован запрос {'action': 'get_contacts', 'time': 1661069056.7359612, 'user': 'Dima'}
+2022-08-21 11:04:16,736  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51105), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1661069056.7359612, 'user': 'Dima'}) {} из функции contacts_list_update
+2022-08-21 11:04:17,237  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51105), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_update
+2022-08-21 11:04:17,237  DEBUG     transport   Получен ответ {'response': 202, 'data_list': ['Stas']}
+2022-08-21 11:04:17,249  DEBUG     transport   Запущен процесс - приёмник сообщений с сервера.
+2022-08-21 11:04:25,827  INFO      decorators  вызов arg_parser() с параметрами () {} из функции <module>
+2022-08-21 11:04:29,363  INFO      client      Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Stas
+2022-08-21 11:04:29,388  INFO      transport   Попытка подключения №1
+2022-08-21 11:04:29,388  DEBUG     transport   Установлено соединение с сервером
+2022-08-21 11:04:29,388  DEBUG     transport   Сформировано presence сообщение для пользователя Stas
+2022-08-21 11:04:29,389  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1661069069.388864, 'user': {'account_name': 'Stas'}}) {} из функции connection_init
+2022-08-21 11:04:29,893  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>,) {} из функции connection_init
+2022-08-21 11:04:29,894  DEBUG     transport   Разбор сообщения от сервера: {'response': 200}
+2022-08-21 11:04:29,894  DEBUG     transport   Сообщение принято сервером. Код 200
+2022-08-21 11:04:29,894  INFO      transport   Соединение с сервером успешно установлено.
+2022-08-21 11:04:29,894  DEBUG     transport   Запрос списка известных пользователей Stas
+2022-08-21 11:04:29,894  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1661069069.894219, 'account_name': 'Stas'}) {} из функции user_list_update
+2022-08-21 11:04:30,399  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>,) {} из функции user_list_update
+2022-08-21 11:04:30,408  DEBUG     transport   Запрос контакт листа для пользователя Stas
+2022-08-21 11:04:30,408  DEBUG     transport   Сформирован запрос {'action': 'get_contacts', 'time': 1661069070.408575, 'user': 'Stas'}
+2022-08-21 11:04:30,408  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1661069070.408575, 'user': 'Stas'}) {} из функции contacts_list_update
+2022-08-21 11:04:30,904  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>,) {} из функции contacts_list_update
+2022-08-21 11:04:30,905  DEBUG     transport   Получен ответ {'response': 202, 'data_list': ['Dima', 'Yura']}
+2022-08-21 11:04:30,921  DEBUG     transport   Запущен процесс - приёмник сообщений с сервера.
+2022-08-21 11:04:54,793  DEBUG     transport   Сформирован словарь сообщения: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661069094.793368, 'message': '4444'}
+2022-08-21 11:04:54,998  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661069094.793368, 'message': '4444'}) {} из функции send_message
+2022-08-21 11:04:55,485  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>,) {} из функции send_message
+2022-08-21 11:04:55,485  DEBUG     transport   Разбор сообщения от сервера: {'response': 200}
+2022-08-21 11:04:55,485  DEBUG     transport   Сообщение принято сервером. Код 200
+2022-08-21 11:04:55,485  INFO      transport   Отправлено сообщение для пользователя Dima
+2022-08-21 11:04:55,854  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51105), raddr=('127.0.0.1', 7777)>,) {} из функции run
+2022-08-21 11:04:55,854  DEBUG     transport   Принято сообщение с сервера: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661069094.793368, 'message': '4444'}
+2022-08-21 11:04:55,854  DEBUG     transport   Разбор сообщения от сервера: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661069094.793368, 'message': '4444'}
+2022-08-21 11:04:55,855  DEBUG     transport   Получено сообщение от пользователя Stas: 4444
+2022-08-21 11:05:03,791  DEBUG     transport   Сформирован словарь сообщения: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661069103.791784, 'message': '222'}
+2022-08-21 11:05:04,027  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661069103.791784, 'message': '222'}) {} из функции send_message
+2022-08-21 11:05:04,515  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>,) {} из функции send_message
+2022-08-21 11:05:04,515  DEBUG     transport   Разбор сообщения от сервера: {'response': 200}
+2022-08-21 11:05:04,515  DEBUG     transport   Сообщение принято сервером. Код 200
+2022-08-21 11:05:04,516  INFO      transport   Отправлено сообщение для пользователя Dima
+2022-08-21 11:05:04,516  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51105), raddr=('127.0.0.1', 7777)>,) {} из функции run
+2022-08-21 11:05:04,516  DEBUG     transport   Принято сообщение с сервера: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661069103.791784, 'message': '222'}
+2022-08-21 11:05:04,516  DEBUG     transport   Разбор сообщения от сервера: {'action': 'msg', 'from': 'Stas', 'to': 'Dima', 'time': 1661069103.791784, 'message': '222'}
+2022-08-21 11:05:04,516  DEBUG     transport   Получено сообщение от пользователя Stas: 222
+2022-08-21 11:06:38,192  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51106), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1661069197.7353961, 'account_name': 'Stas'}) {} из функции transport_shutdown
+2022-08-21 11:06:38,193  DEBUG     transport   Транспорт завершает работу.
+2022-08-21 11:06:42,201  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51105), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1661069202.2014852, 'account_name': 'Dima'}) {} из функции transport_shutdown
+2022-08-21 11:06:42,201  DEBUG     transport   Транспорт завершает работу.
