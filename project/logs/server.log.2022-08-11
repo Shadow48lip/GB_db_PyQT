@@ -1,0 +1,92 @@
+2022-08-11 11:19:32,839  DEBUG     server_db   Версия SQLAlchemy: 1.4.40
+2022-08-11 11:19:32,844  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 11:19:32,845  INFO      server      Server start. Listen connect on :7777
+2022-08-11 11:21:17,943  DEBUG     server_db   Версия SQLAlchemy: 1.4.40
+2022-08-11 11:21:17,951  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 11:21:17,952  INFO      server      Server start. Listen connect on :7777
+2022-08-11 14:00:19,121  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:00:19,135  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:00:27,168  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:00:27,178  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:01:33,454  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:01:33,473  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:02:58,776  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:02:58,899  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:02:59,015  INFO      server      Server start. Listen connect on :7777
+2022-08-11 14:03:43,258  INFO      server      Получен запрос на соединение от ('127.0.0.1', 62782)
+2022-08-11 14:03:43,763  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62782)>,) {} из функции run
+2022-08-11 14:03:43,764  DEBUG     server      Разбор входящего сообщения: {'action': 'presence', 'time': 1660215823.2587168, 'user': {'account_name': 'Dima'}}
+2022-08-11 14:03:43,764  DEBUG     server      Зарегистрировали нового пользователя Dima
+2022-08-11 14:03:43,808  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62782)>, {'response': 200}) {} из функции process_client_message
+2022-08-11 14:03:58,338  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62782)>,) {} из функции run
+2022-08-11 14:03:58,338  DEBUG     server      Разбор входящего сообщения: {'action': 'msg', 'from': 'Dima', 'to': 'Stat', 'time': 1660215838.2093859, 'message': 'asa'}
+2022-08-11 14:03:58,338  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62782)>, {'action': 'msg', 'from': 'Server', 'to': 'Dima', 'time': 1660215838.33842, 'message': 'Пользователь Stat не зарегистрирован.'}) {} из функции process_message
+2022-08-11 14:03:58,338  ERROR     server      Пользователь Stat не зарегистрирован на сервере, отправка сообщения невозможна.
+2022-08-11 14:06:13,202  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:06:13,218  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:06:13,274  INFO      server      Server start. Listen connect on :7777
+2022-08-11 14:11:19,328  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:11:19,346  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:11:19,441  INFO      server      Server start. Listen connect on :7777
+2022-08-11 14:11:41,679  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:11:41,689  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:11:41,765  INFO      server      Server start. Listen connect on :7777
+2022-08-11 14:12:32,306  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:12:32,334  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:12:32,401  INFO      server      Server start. Listen connect on :7777
+2022-08-11 14:13:51,126  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:13:51,138  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:13:51,205  CRITICAL  descriptors  Попытка запуска сервера с указанием неподходящего порта 77. Допустимы адреса с 1024 до 65535.
+2022-08-11 14:14:02,567  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:14:02,578  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:14:02,644  CRITICAL  descriptors  Попытка запуска сервера с указанием неподходящего порта 77. Допустимы адреса с 1024 до 65535.
+2022-08-11 14:14:08,301  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:14:08,323  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:14:08,382  INFO      server      Server start. Listen connect on :7788
+2022-08-11 14:14:38,067  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:14:38,078  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:14:38,099  INFO      server      Server start. Listen connect on :7777
+2022-08-11 14:21:07,441  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:21:07,458  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:21:07,531  INFO      server      Server start. Listen connect on :7777
+2022-08-11 14:23:19,524  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:23:19,538  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:23:19,588  INFO      server      Server start. Listen connect on :7777
+2022-08-11 14:23:41,686  INFO      server      Получен запрос на соединение от ('127.0.0.1', 62852)
+2022-08-11 14:23:41,687  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62852)>,) {} из функции run
+2022-08-11 14:23:41,687  DEBUG     server      Разбор входящего сообщения: {'action': 'presence', 'time': 1660217021.686293, 'user': {'account_name': 'Stas'}}
+2022-08-11 14:23:41,687  DEBUG     server      Зарегистрировали нового пользователя Stas
+2022-08-11 14:23:41,695  INFO      server      Отправитель ('127.0.0.1', 62852) отключился от сервера.
+2022-08-11 14:23:53,327  INFO      server      Получен запрос на соединение от ('127.0.0.1', 62853)
+2022-08-11 14:23:53,329  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62853)>,) {} из функции run
+2022-08-11 14:23:53,329  DEBUG     server      Разбор входящего сообщения: {'action': 'presence', 'time': 1660217033.327709, 'user': {'account_name': 'Stas'}}
+2022-08-11 14:23:53,329  DEBUG     server      Пользователь уже добавлен. Код 400
+2022-08-11 14:23:53,329  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62853)>, {'response': 400, 'error': 'Пользователь Stas уже зарегистрирован.'}) {} из функции process_client_message
+2022-08-11 14:24:08,356  INFO      server      Отправитель ('127.0.0.1', 62853) отключился от сервера.
+2022-08-11 14:24:13,231  INFO      server      Получен запрос на соединение от ('127.0.0.1', 62854)
+2022-08-11 14:24:13,231  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62854)>,) {} из функции run
+2022-08-11 14:24:13,232  DEBUG     server      Разбор входящего сообщения: {'action': 'presence', 'time': 1660217053.231117, 'user': {'account_name': 'Stas'}}
+2022-08-11 14:24:13,232  DEBUG     server      Пользователь уже добавлен. Код 400
+2022-08-11 14:24:13,233  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62854)>, {'response': 400, 'error': 'Пользователь Stas уже зарегистрирован.'}) {} из функции process_client_message
+2022-08-11 14:25:44,105  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 14:25:44,117  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 14:25:44,149  INFO      server      Server start. Listen connect on :7777
+2022-08-11 14:25:58,158  INFO      server      Получен запрос на соединение от ('127.0.0.1', 62859)
+2022-08-11 14:25:58,159  INFO      decorators  вызов get_message() с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62859)>,) {} из функции run
+2022-08-11 14:25:58,159  DEBUG     server      Разбор входящего сообщения: {'action': 'presence', 'time': 1660217158.1582851, 'user': {'account_name': 'Stas'}}
+2022-08-11 14:25:58,159  DEBUG     server      Зарегистрировали нового пользователя Stas
+2022-08-11 14:25:58,187  INFO      decorators  вызов send_message() с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62859)>, {'response': 200}) {} из функции process_client_message
+2022-08-11 17:35:10,047  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 17:35:10,067  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 17:35:10,128  INFO      server      Server start. Listen connect on :7777
+2022-08-11 18:47:29,857  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 18:47:40,496  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 18:49:55,018  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 18:50:57,713  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 18:51:16,879  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 18:52:12,211  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 18:52:12,222  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 18:52:12,299  INFO      server      Server start. Listen connect on :7777
+2022-08-11 23:18:45,812  DEBUG     server_db   SQLAlchemy: 1.4.40 подключена
+2022-08-11 23:18:45,819  INFO      decorators  вызов arg_parser() с параметрами () {} из функции main
+2022-08-11 23:18:45,845  INFO      server      Server start. Listen connect on :7777

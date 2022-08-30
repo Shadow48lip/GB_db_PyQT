@@ -8,7 +8,6 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-
 class Ui_MainClientWindow(object):
     def setupUi(self, MainClientWindow):
         MainClientWindow.setObjectName("MainClientWindow")
@@ -83,8 +82,8 @@ class Ui_MainClientWindow(object):
         self.btn_remove_contact.setText(_translate("MainClientWindow", "Удалить контакт"))
         self.label_history.setText(_translate("MainClientWindow", "История сообщений:"))
         self.label_new_message.setText(_translate("MainClientWindow", "Введите новое сообщение:"))
-        self.btn_send.setText(_translate("MainClientWindow", "Отправить сообщение"))
-        self.btn_clear.setText(_translate("MainClientWindow", "Очистить поле"))
+        self.btn_send.setText(_translate("MainClientWindow", "Отправить"))
+        self.btn_clear.setText(_translate("MainClientWindow", "Очистить"))
         self.menu.setTitle(_translate("MainClientWindow", "Файл"))
         self.menu_2.setTitle(_translate("MainClientWindow", "Контакты"))
         self.menu_exit.setText(_translate("MainClientWindow", "Выход"))
