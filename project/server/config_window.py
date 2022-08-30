@@ -9,7 +9,7 @@ sys.path.append('../')
 from common.variables import SERVER_CONFIG
 
 class ConfigWindow(QDialog):
-    '''Класс окно настроек.'''
+    """Класс окно настроек"""
 
     def __init__(self, config):
         super().__init__()

@@ -4,7 +4,6 @@ import sys
 from random import randint
 from time import sleep
 
-
 PYTHON_PATH = sys.executable
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -26,23 +25,24 @@ def get_subprocess(file_with_args):
     return
 
 
-process = []
-while True:
-    TEXT_FOR_INPUT = "Выберите действие: q - выход, s - запустить сервер, c - клиенты, x - завершить работу: "
-    action = input(TEXT_FOR_INPUT)
+if __name__ == '__main__':
+    process = []
+    while True:
+        TEXT_FOR_INPUT = "Выберите действие: q - выход, s - запустить сервер, c - клиенты, x - завершить работу: "
+        action = input(TEXT_FOR_INPUT)
 
-    if action == "q":
-        break
-    elif action == "s":
+        if action == "q":
+            break
+        elif action == "s":
 
-        get_subprocess("server.py")
+            get_subprocess("server.py")
 
-    elif action == "c":
-        for i in range(2):
-            get_subprocess("client.py -m send")
+        elif action == "c":
+            for i in range(2):
+                get_subprocess("client.py -m send")
 
-        for i in range(2):
-            get_subprocess("client.py -m listen")
+            for i in range(2):
+                get_subprocess("client.py -m listen")
 
-    elif action == "x":
-        sys.exit(1)
+        elif action == "x":
+            sys.exit(1)
