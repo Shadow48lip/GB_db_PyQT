@@ -1,0 +1,5 @@
+Bandit
+
+pip install bandit
+bandit -r path/to/file
+bandit -r ex_5

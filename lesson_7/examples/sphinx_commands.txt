@@ -1,0 +1,22 @@
+pip install sphinx - установка пакета
+
+sphinx-quickstart - создание нового сфинкс-проекта
+
+Но прежде необходимо провести изменения в doc/source/config.py
+
+1. Прописать системный путь к корню проекта
+2. Добавить расширения для автоматического добавления информации
+        https://www.sphinx-doc.org/en/master/tutorial/automatic-doc-generation.html
+3. Создать rst-файлы
+  (их можно создать автоматически с помощью команды:
+              sphinx-apidoc -o <output dir> <source dir>)
+  $ sphinx-apidoc -o source ..
+  (обработаны будут только Python Packages, т.е. папки, содержащие __init__.py)
+
+  Важно: 1. не забыть добавить в index.rst modules,
+         либо сразу же прописать туда имена всех rst-файлов!!!
+
+4. Прописать в rst-файлах параметры заполнения
+    https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
+
+make html - запуск сборки
