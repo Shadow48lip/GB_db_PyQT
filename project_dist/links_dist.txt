@@ -1,0 +1,3 @@
+https://pypi.org/project/sh-py-mess-client/0.0.1/
+https://pypi.org/project/sh-py-mess-server/0.0.2/
+
